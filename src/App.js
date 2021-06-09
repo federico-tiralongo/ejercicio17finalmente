@@ -1,11 +1,11 @@
 function App() {
   const categoria = [
-    "Noticias de deporte",
-    "Noticias de ocio",
-    "Noticias de cultura",
-    "Noticias de fiestas",
-    "Noticias de politica",
-    "Noticias de arregloCommit",
+    {id: 1, categorias: "Noticias de deporte"},
+    {id: 2, categorias: "Noticias de ocio"},
+    {id: 3, categorias: "Noticias de cultura"},
+    {id: 4, categorias: "Noticias de fiestas"},
+    {id: 5, categorias: "Noticias de politica"},
+    {id: 6, categorias: "Noticias de arregloCommit"},
   ];
   const otraCosa = [
     { id: 1, cosa: "Nosequé" },
@@ -38,8 +38,8 @@ function App() {
             <section className="listado">
               <h3>Categorías</h3>
               <ul className="list-unstyled">
-                {categoria.map((categoria) => (
-                  <li key={categoria.id}>{categoria.noticia}</li>
+                {categoria.map((categorias) => (
+                  <li key={categorias.id}>{categorias.categorias}</li>
                 ))}
               </ul>
             </section>
