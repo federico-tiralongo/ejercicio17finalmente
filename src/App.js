@@ -13,7 +13,8 @@ function App() {
     { id: 3, cosa: "Nosecuánto" },
   ];
   const textoFooter = "Texto del footer";
-  const nohayCopy = "no";
+  const copirights = true;
+  const textoCuerpo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi numquam, iusto omnis minima corrupti est officiis natus nam,adipisci commodi quo autem magnam sequi magni odio solutatemporibus velit qua";
 
   return (
     <>
@@ -29,7 +30,9 @@ function App() {
         <div className="contenedor-principal row">
           <main className="principal col-12 col-sm-7 col-md-8 py-4">
             <h2>Titulo de la noticia</h2>
-            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi numquam, iusto omnis minima corrupti est officiis natus nam,adipisci commodi quo autem magnam sequi magni odio solutatemporibus velit qua";</p>
+            <p>{textoCuerpo}</p>
+            <p>{textoCuerpo}</p>
+            <p>{textoCuerpo}</p>
           </main>
           <aside className="sidebar col-12 col-sm-5 col-md-4 py-4">
             <section className="listado">
@@ -52,7 +55,7 @@ function App() {
         </div>
         <footer className="footer text-white row align-items-center">
           <p className="col text-center">
-            {textoFooter} {nohayCopy === "si" && "-Ningún derecho reservado"}
+            {textoFooter} {copirights && "copias todo lo que te da la gana"}
           </p>
         </footer>
       </div>
